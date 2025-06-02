@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #6c5ce7;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #ffeaa7;
+    }
+
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f1f2f6;
+    }
+
+    .section:nth-child(odd) {
+      background-color: #dfe6e9;
+    }
+
+    footer {
+      background-color: #2d3436;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyProfile</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://unsplash.com/photos/red-illuminated-structures-leading-into-a-dark-tunnel-cZZ04o_R8_c" class="d-block w-100" alt="Tech" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1200x400/?coding" class="d-block w-100" alt="Coding" />
+      </div>
+      <div class="carousel-item">
+        <img src="https://source.unsplash.com/1200x400/?developer" class="d-block w-100" alt="Developer" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Sections -->
+  <section id="about" class="section text-center">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I’m a passionate web developer with a love for building beautiful and functional websites.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section text-center">
+    <div class="container">
+      <h2>Skills</h2>
+      <p>HTML, CSS, JavaScript, Node.js, React, Bootstrap, MongoDB</p>
+    </div>
+  </section>
+
+  <section id="projects" class="section text-center">
+    <div class="container">
+      <h2>Projects</h2>
+      <p>Here are some of the amazing projects I’ve worked on.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section text-center">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: faisalhanip123@gmail.com | Phone: 0812-6708-8355</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyProfile. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
